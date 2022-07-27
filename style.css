@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap');
+
+
+
+:root {
+    --color-dark-blue: hsl(240, 38%, 20%);
+    --color-greyish-blue: hsl(240, 18%, 77%);
+}
+
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-size: 32px;
+    font-family: 'Inter', sans-serif;
+    height: 100%;
+    max-height: 100%;
+    background: url("images/pattern-curve.svg") no-repeat;
+    background-position: left bottom;
+    background-attachment: fixed;
+}
+
+
+
+.review {
+    max-width: 85vw;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: url("images/pattern-bg.svg") contain no-repeat;
+    background-position: left top;
+    background: url("images/pattern-quotes.svg") no-repeat;
+    background-position: 5% 20%;
+}
+
+.review img {
+    max-width: 450px;
+    height: auto;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: -90px;
+    margin-left: 90px;
+    width: 20%;
+    height: 15%;
+    background: white;
+    box-shadow: 0px 8px 15px rgb(0 0 0 / 10%);
+    border-radius: 25px;
+}
+
+button {
+    background: white;
+    padding: 10px 20px;
+    border: 0;
+    cursor: pointer;
+}
+
+.prev-btn {
+    border-radius: 25px 0 0 25px;
+}
+
+.next-btn {
+    border-radius: 0 25px 25px 0;
+}
+
+.pic-button-col {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+blockquote {
+    font-family: 'Inter', sans-serif;
+    color: var(--color-dark-blue);
+    font-weight: 100;
+    margin: 0;
+    width: 45vw;
+    max-width: 45vw;
+    z-index: 2;
+}
+
+#author {
+    font-weight: 700;
+    color: var(--color-dark-blue);
+    font-size: 1.1rem;
+}
+
+#title {
+    font-weight: 500;
+    color: var(--color-greyish-blue);
+    font-size: 1.1rem;
+    margin-left: 20px;
+}
+
+figcaption {
+    display: flex;
+    flex-direction: row;
+}
+
+#photo img {
+    box-shadow: 0px 8px 15px rgb(0 0 0 / 10%);
+}
+
+#photo {
+    padding: 60px;
+    background: url("images/pattern-bg.svg") no-repeat;
+}
+
+footer {
+    font-size: 0.8rem;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+}
+
+@media screen and (max-width: 500px) {
+    .review {
+        flex-wrap: column;
+        flex-direction: column-reverse;
+    }
+
+    blockquote {
+        width: 90vw;
+        max-width: 90vw;
+        margin: 50px auto;
+    }
+
+    .pic-button-col img {
+        max-width: 60vw;
+        height: auto;
+    }
+
+    .review {
+        background: url("images/pattern-quotes.svg") no-repeat;
+        background-position: 30% 55%;
+        ;
+    }
+
+    body {
+        background: url("images/pattern-curve.svg") no-repeat;
+        background-position: left bottom;
+        background-attachment: scroll;
+    }
+
+}
