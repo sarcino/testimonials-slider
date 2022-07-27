@@ -9,6 +9,10 @@ Users should be able to:
 - View the optimal layout for the component depending on their device's screen size
 - Navigate the slider using either their mouse/trackpad or keyboard
 
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
 
 ## Links
 
